@@ -1,0 +1,14 @@
+<svg id="page" class="portrait-view">
+  <text id="consoleLabel" />
+  <text id="timeLabel" />
+  <text id="timeValueLabel" />
+  <text id="dateLabel" />
+  <text id="dateValueLabel" />
+  <text id="batteryLabel" />
+  <text id="batteryValueLabel" />
+  <text id="heartRateLabel" />
+  <text id="heartRateValueLabel" />
+  <text id="stepsLabel" />
+  <text id="stepsValueLabel" />
+  <text id="blinkingLabel" />
+</svg>

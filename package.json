@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0",
+    "@fitbit/sdk-cli": "^1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "fdb624ed-1c87-489a-bd9a-fb81c0d91fa4",
+    "appType": "clockface",
+    "appDisplayName": "Console",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#f44336",
+    "requestedPermissions": [
+      "access_activity",
+      "access_heart_rate",
+      "access_calendar"
+    ],
+    "buildTargets": [
+      "mira"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "Console"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

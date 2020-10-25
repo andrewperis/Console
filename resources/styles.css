@@ -1,0 +1,123 @@
+.background {
+  viewport-fill: black;
+}
+
+#consoleLabel {
+  font-size: 26;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 10%;
+  fill: white;
+}
+
+#timeLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 20%;
+  fill: white;
+}
+
+#timeValueLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 95%;
+  y: 20%;
+  fill: fb-cyan;
+}
+
+#dateLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 30%;
+  fill: white;
+}
+
+#dateValueLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 95%;
+  y: 30%;
+  fill: fb-cyan;
+}
+
+#batteryLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 40%;
+  fill: white;
+}
+
+#batteryValueLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 95%;
+  y: 40%;
+  fill: white;
+}
+
+#heartRateLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 50%;
+  fill: white;
+}
+
+#heartRateValueLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 95%;
+  y: 50%;
+  fill: fb-red;
+}
+
+#stepsLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 60%;
+  fill: white;
+}
+
+#stepsValueLabel {
+  font-size: 28;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: end;
+  x: 95%;
+  y: 60%;
+  fill: fb-magenta;
+}
+
+#blinkingLabel {
+  font-size: 26;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: start;
+  x: 5%;
+  y: 95%+2;
+  fill: white;
+}
