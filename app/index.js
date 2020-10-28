@@ -1,7 +1,7 @@
 /////////////
 // Imports //
 /////////////
-import { me } from "appbit";
+import { me as appbit } from "appbit";
 import { me as device } from "device";
 import { HeartRateSensor } from "heart-rate";
 import { battery } from "power";
@@ -11,8 +11,6 @@ import { today } from "user-activity";
 import { display } from "display";
 import clock from "clock";
 import document from "document";
-import * as fs from "fs";
-import * as messaging from "messaging";
 import * as util from "../common/utils";
 
 
@@ -39,9 +37,9 @@ clock.addEventListener("tick", updateClock);
 battery.addEventListener("change", updateBattery);
 
 if (HeartRateSensor) {
-  const heartRateValueLabel = document.getElementById("heartRateValueLabel");
+  let heartRateValueLabel = document.getElementById("heartRateValueLabel");
   const hrm = new HeartRateSensor();
-  
+
   hrm.addEventListener("reading", () => {
     heartRateValueLabel.text = `${hrm.heartRate}` + " bpm";
   });
@@ -70,9 +68,6 @@ if (BodyPresenceSensor) {
   bodyPresence.start();
 }
 
-let stepsValueLabel = document.getElementById("stepsValueLabel");
-stepsValueLabel.text = updateSteps();
-
 
 ///////////////
 // FUNCTIONS //
@@ -98,8 +93,8 @@ function updateStaticLabels() {
 }
 
 function updateClock() {
-  let today = new Date();
-  let hours = today.getHours();
+  let t = new Date();
+  let hours = t.getHours();
   
   if (preferences.clockDisplay === "12h") {
     // 12h format
@@ -108,13 +103,16 @@ function updateClock() {
     // 24h format
     hours = util.monoDigits(hours, true);
   }
-  let mins = util.monoDigits(today.getMinutes(), true);
-  let secs = util.monoDigits(today.getSeconds(), true);
+  let mins = util.monoDigits(t.getMinutes(), true);
+  let secs = util.monoDigits(t.getSeconds(), true);
   let timeValueLabel = document.getElementById("timeValueLabel");
   timeValueLabel.text = `${hours}:${mins}:${secs}`;
   
   let dateValueLabel = document.getElementById("dateValueLabel");
   dateValueLabel.text = util.getDate();
+  
+  let stepsValueLabel = document.getElementById("stepsValueLabel");
+  stepsValueLabel.text = updateSteps();
   
   let bLabel = document.getElementById("blinkingLabel");
   if (bLabel.text == (CONSOLE_TEXT))
@@ -130,7 +128,7 @@ function updateBattery() {
 }
 
 function updateSteps() {
-  if (me.permissions.granted("access_activity")) {
+  if (appbit.permissions.granted("access_activity")) {
      return today.adjusted.steps;
   } else {
     return "--";
