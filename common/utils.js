@@ -11,7 +11,6 @@ const c6 = String.fromCharCode(0x16);
 const c7 = String.fromCharCode(0x17);
 const c8 = String.fromCharCode(0x18);
 const c9 = String.fromCharCode(0x19);
-const BATTERY_TEXT = "[..........]";
 
 ////////////////////////
 // Exported Functions //
@@ -68,10 +67,12 @@ export function getBatteryText(digit)
 
 export function getBatteryTextColor(digit)
 {
-  if (digit >= 70)
+  if (digit >= 75)
     return "fb-green";
-  else if (digit >= 30)
-    return "fb-orange"
+  else if (digit >= 50)
+    return "fb-yellow";
+  else if (digit >= 25)
+    return "fb-orange";
   else
     return "fb-red";
 }
