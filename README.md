@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=andrewperis_Console&metric=alert_status)](https://sonarcloud.io/dashboard?id=andrewperis_Console)
+
 # Console
 ## A FitBit Versa 2 clock face
 
