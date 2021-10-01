@@ -4,7 +4,7 @@
 
 #consoleLabel {
   font-size: 26;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
@@ -14,7 +14,7 @@
 
 #timeLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
@@ -24,7 +24,7 @@
 
 #timeValueLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: end;
   x: 95%;
@@ -34,7 +34,7 @@
 
 #dateLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
@@ -44,7 +44,7 @@
 
 #dateValueLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: end;
   x: 95%;
@@ -54,7 +54,7 @@
 
 #batteryLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
@@ -64,7 +64,7 @@
 
 #batteryValueLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: end;
   x: 95%;
@@ -74,7 +74,7 @@
 
 #heartRateLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
@@ -84,7 +84,7 @@
 
 #heartRateValueLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: end;
   x: 95%;
@@ -94,7 +94,7 @@
 
 #stepsLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
@@ -104,7 +104,7 @@
 
 #stepsValueLabel {
   font-size: 28;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: end;
   x: 95%;
@@ -114,7 +114,7 @@
 
 #blinkingLabel {
   font-size: 26;
-  font-family: System-Bold;
+  font-family: System-Bold, Monospace;
   text-length: 32;
   text-anchor: start;
   x: 5%;
